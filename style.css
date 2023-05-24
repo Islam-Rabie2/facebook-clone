@@ -108,13 +108,13 @@ nav .right i #toggleDark {
   cursor: pointer;
 }
 
-/*************************
-**************************
+/*****
+******
 nav .right i#toggleDark::before {
     content: "🌙";
   }
-*************************
-*************************/
+*****
+*****/
 nav .right img {
   width: 35px;
   height: 35px;
@@ -1013,9 +1013,9 @@ nav .right img {
 }
 
 
-/*******************************
+/*******
 ----------Media Query-----------
-*******************************/
+*******/
 @media only screen and (max-width:1414px) {
   .main .center .room {
     display: none;
@@ -1194,7 +1194,6 @@ nav .right img {
   .main .center .top_box .story_card .story_name .name {
     font-size: 12px;
   }
-
   .main .center .room {
     flex-direction: column;
     align-items: flex-start;
@@ -1258,7 +1257,7 @@ nav .right img {
 
 @media only screen and (max-width:882px) {
   body {
-    width: 100%;
+    width: 50%;
   }
 
   nav .left .logo img {
@@ -1273,6 +1272,7 @@ nav .right img {
   }
 
   nav .center i {
+    display: none;
     font-size: 23px;
   }
 
@@ -1287,8 +1287,14 @@ nav .right img {
     display: none;
   }
 
-
-  .main .center .top_box .story_card,
+  .main .center .top_box .story_card{
+    width: 97%;
+    height: 240px;
+    margin-top: -10px;
+    margin-right: 15px;
+    margin-left: -10px;
+    bottom: unset;
+  }
   .main .center .top_box .my_story_card {
     width: 97%;
     height: 240px;
@@ -1309,7 +1315,7 @@ nav .right img {
   }
 
   body .center {
-    width: 100vh !important;
+    width: 100vh ;
   }
 
   .main .center .my_post {
@@ -1322,8 +1328,6 @@ nav .right img {
     width: 35px;
     height: 35px;
   }
-
-
 
   .main .center .my_post .post_top input {
     width: 50%;
@@ -1379,7 +1383,46 @@ nav .right img {
   }
 }
 
-
+@media only screen and (max-width:860px) {
+  body {
+    width: 10%;
+    margin-left: 90px;
+    margin-right: -5px;
+  }
+  
+  nav .right {
+    margin-left: 2px;
+    width: 30px;
+  }
+  nav .center{
+    display: none;
+  }
+  .main .center .top_box .story_card {
+    width: 95%;
+    height: 250px;
+    margin-right: 15px;
+    margin-left: -10px;
+  }
+  .main .center .top_box .my_story_card {
+    width:95%;
+    height: 250px;
+    margin-right: 15px;
+    margin-left: -10px;
+    bottom: unset;
+  }
+  .main .center .top_box .story_card .story_name .name {
+    margin-top: 9px;
+    font-size: 12px;
+  }
+ .modal-content{
+  margin-left: 30px;
+ 
+ }
+  #createModal{
+    width:700px;
+  
+  }
+}
 
 @media only screen and (max-width:755px) {
   nav .center i {
@@ -1401,30 +1444,56 @@ nav .right img {
     margin-left: -10px;
     bottom: unset;
   }
-
   .main .center .top_box .story_card .story_name .name {
     margin-top: 9px;
     font-size: 12px;
   }
 }
 
-@media only screen and (max-width:728px) {
-
-  .main .center .top_box .story_card,
+@media only screen and (max-width:730px) {
+  body {
+    width: 10%;
+    margin-left: 55px;
+  }
+  
+  nav .right {
+    margin-left: 2px;
+    width: 30px;
+  }
+  .main .center .top_box .story_card {
+    width: 95%;
+    height: 250px;
+    margin-right: 15px;
+    margin-left: -10px;
+  }
   .main .center .top_box .my_story_card {
-    width: 100px;
-    height: 220px;
-    margin-right: 9px;
-    padding-left: 5px;
+    width:95%;
+    height: 250px;
+    margin-right: 15px;
+    margin-left: -10px;
+    bottom: unset;
+  }
+  .main .center .top_box .story_card .story_name .name {
+    margin-top: 9px;
+    font-size: 12px;
+  }
+ .modal-content{
+  margin-left: 30px;
+ 
+ }
+  #createModal{
+    width:700px;
+  
   }
 }
 
 @media only screen and (max-width:650px) {
 
   body {
-    width: 0vh;
+    width: 10%;
+    margin-left: 80px;
+    margin-right: -5px;
   }
-
   nav .left .logo img {
     width: 40px;
     margin-left: -3px;
@@ -1492,10 +1561,12 @@ nav .right img {
   }
 }
 
-@media only screen and (max-width:632px) {
+@media only screen and (max-width:642px) {
 
   body {
     width: 10%;
+    margin-left: 50px;
+    margin-right: -5px;
   }
 
   .main .center .top_box .story_card,
@@ -1508,58 +1579,29 @@ nav .right img {
 }
 
 @media only screen and (max-width:450px) {
+ 
   body {
     width: 10%;
+    margin-left: 10px;
+    margin-right: -5px;
   }
   nav .left .logo img {
-    width: 45px;
-    margin-left: 6px;
-  }
-  nav .right {
-    margin-left: 8px;
-    width: 50px;
-  }
-  .main .center .top_box .story_card {
-    width: 115px;
-    height: 250px;
-    margin-right: 15px;
-    margin-left: -10px;
-
-  }
-  .main .center .top_box .my_story_card {
-    width: 115px;
-    height: 250px;
-    margin-right: 15px;
-    margin-left: -10px;
-    bottom: unset;
-  }
-  .main .center .top_box .story_card .story_name .name {
-    margin-top: 9px;
-    font-size: 12px;
-  }
-}
-
-@media only screen and (max-width:360px) {
-  body {
-    width: 10%;
-  }
-  nav .left .logo img {
-    width: 3px;
-    margin-left: 6px;
+    width: 40px;
+    margin-left:6px;
   }
   nav .right {
     margin-left: 2px;
     width: 30px;
   }
   .main .center .top_box .story_card {
-    width: 20px;
-    height: 250px;
+    width: 98%;
+    height: 240px;
     margin-right: 15px;
     margin-left: -10px;
   }
   .main .center .top_box .my_story_card {
-    width: 70px;
-    height: 250px;
+    width: 98%;
+    height: 240px;
     margin-right: 15px;
     margin-left: -10px;
     bottom: unset;
@@ -1567,5 +1609,13 @@ nav .right img {
   .main .center .top_box .story_card .story_name .name {
     margin-top: 9px;
     font-size: 12px;
+  }
+ .modal-content{
+  margin-left: 30px;
+ 
+ }
+  #createModal{
+    width:700px;
+  
   }
 }
